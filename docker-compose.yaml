@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    image: httpd:2.4
+    volumes:
+      - ./htdocs:/usr/local/apache2/htdocs
+    environment:
+      TZ: 'Asia/Bangkok'
+    ports:
+      - 80:80
